@@ -25,6 +25,8 @@ jobs:
           server-dir: /htdocs/
           local-dir: ./
           exclude: |
+            .git/**
+            **/.git/**
             **/.git*
             **/.github/**
             **/README.md
