@@ -105,6 +105,98 @@
  .venn{min-height:315px}
  .venn-title{left:12px;font-size:8px}
 }
+
+/* Responsive layout refinement for desktop, tablet and mobile */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+.wrap{width:min(var(--max),calc(100% - 48px))}
+.hero-grid,.split,.casegrid,.contactgrid,.cards,.skills,.proofgrid{min-width:0}
+.hero-grid>* ,.split>* ,.casegrid>* ,.contactgrid>* ,.cards>* ,.skills>*{min-width:0}
+h1,h2,h3,p,a,small,strong,span,li{overflow-wrap:anywhere}
+.venn{width:100%;min-width:0}
+.venn-diagram{max-width:100%}
+.buttons .btn{max-width:100%;white-space:normal}
+.card,.skill,.outputs,.contactcard{min-width:0}
+@media(max-width:1000px){
+ .wrap{width:calc(100% - 40px)}
+ .hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:28px}
+ .links{gap:15px}
+ .links a{font-size:12px}
+ .section{padding:72px 0}
+}
+@media(max-width:850px){
+ .nav{height:auto;min-height:68px;flex-wrap:wrap;padding:12px 0;gap:10px 16px}
+ .brand{flex:0 0 auto}
+ .actions{margin-left:auto;gap:9px}
+ .links{display:flex;order:3;width:100%;gap:20px;overflow-x:auto;white-space:nowrap;padding:4px 1px 8px;scrollbar-width:thin}
+ .links a{flex:0 0 auto}
+ .hero-grid,.split,.casegrid,.contactgrid{grid-template-columns:minmax(0,1fr);gap:32px}
+ .hero{padding:64px 0 48px}
+ .hero-grid{max-width:700px}
+ .venn{max-width:620px;margin-inline:auto}
+ .proofgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .metric{border-right:0}
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .skills{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .sectionhead{align-items:flex-start;flex-direction:column;gap:14px}
+ .sectionhead>p{max-width:680px}
+ .timeline{grid-template-columns:150px minmax(0,1fr);gap:20px}
+}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 32px)}
+ .nav{gap:8px 10px}
+ .brand{font-size:17px}
+ .actions{gap:7px}
+ .lang button{padding:6px 8px}
+ .actions>a{font-size:9px}
+ .links{gap:17px;font-size:11px}
+ .hero{padding:48px 0 38px}
+ h1{font-size:clamp(36px,9vw,48px);line-height:1.04}
+ .lead{font-size:15px;line-height:1.6}
+ .meta{gap:10px 15px;font-size:9px}
+ .buttons{gap:9px}
+ .btn{padding:11px 12px;font-size:12px}
+ .venn{min-height:0;aspect-ratio:1/1.05}
+ .proofgrid{gap:15px 10px;padding:20px 0}
+ .metric{gap:8px;align-items:flex-start}
+ .metric strong{font-size:25px}
+ .metric b{font-size:11px}
+ .metric small{font-size:10px}
+ .section{padding:56px 0}
+ .sectionhead{margin-bottom:26px}
+ .sectionhead h2,.splithead h2{font-size:clamp(30px,8vw,38px)}
+ .cards,.skills{grid-template-columns:minmax(0,1fr)}
+ .visual{height:145px}
+ .body{padding:18px}
+ .casegrid{gap:24px}
+ .outputs{padding:20px}
+ .primarykpi strong{font-size:clamp(38px,11vw,49px)}
+ .kpigrid{gap:15px}
+ .kpigrid strong{font-size:21px}
+ .timeline{grid-template-columns:minmax(0,1fr);gap:7px;padding:20px 0}
+ .timeline h3{font-size:17px}
+ .edurow{grid-template-columns:minmax(0,1fr);gap:5px}
+ .gpa{white-space:normal}
+ .contact{padding:56px 0}
+ .contactgrid{gap:25px}
+ .contactcard{padding:19px}
+ .foot{align-items:flex-start;flex-direction:column;gap:10px}
+}
+@media(max-width:380px){
+ .wrap{width:calc(100% - 26px)}
+ .actions{gap:5px}
+ .lang button{padding:5px 6px;font-size:9px}
+ .links{gap:14px}
+ .meta{font-size:8px}
+ .buttons .btn{padding:10px}
+ .venn{aspect-ratio:1/1.12}
+ .metric strong{font-size:22px}
+ .kpigrid{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+
 </style>
 </head>
 <body>
