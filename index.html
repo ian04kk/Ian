@@ -25,6 +25,37 @@
 /* Technical illustration: rooftop PV integrated with an industrial facility */
 .solar-figure{margin:26px 0 18px;padding:18px 18px 12px;border:1px solid #ffffff2b;border-radius:7px;background:linear-gradient(145deg,#233b33,#182520);overflow:hidden}.solar-figure svg{display:block;width:100%;height:auto;max-height:210px}.solar-figure figcaption{margin-top:8px;color:#b8c9be;font:9px 'DM Mono';letter-spacing:.1em;text-transform:uppercase}.solar-figure .panel{fill:#3988a5;stroke:#a6d7e7;stroke-width:1.4}.solar-figure .gridline{stroke:#bce4ef;stroke-width:.8;opacity:.7}
 @media(max-width:850px){.solar-figure{max-width:560px}}
+
+/* Refined gradient Venn diagram with responsive circle geometry */
+.venn{min-height:430px;background:radial-gradient(ellipse at 50% 48%,#304b43 0%,#1e3029 58%,#17211f 100%);overflow:hidden}
+.circles{inset:48px 0 38px}
+.circle{width:215px;height:215px;padding-top:34px;mix-blend-mode:normal;box-shadow:inset 0 0 35px #ffffff12,0 12px 28px #0002}
+.ops{background:radial-gradient(circle at 32% 28%,#55d6a6b8 0%,#239b78a1 48%,#17634e88 100%);border-color:#7de4bb}
+.fin{background:radial-gradient(circle at 72% 28%,#ffdb8cbf 0%,#d99a43a6 48%,#94632688 100%);border-color:#ffdb91}
+.energy{background:radial-gradient(circle at 50% 72%,#7dd6f3c2 0%,#328db5a8 48%,#205b7a88 100%);border-color:#9ce5ff}
+.overlap-core{background:radial-gradient(circle at 35% 25%,#fffdf4 0%,#e8e3d4 100%);box-shadow:0 0 0 7px #f5f1e626,0 12px 30px #0006}
+@media(max-width:680px){
+ .venn{min-height:405px}
+ .circles{inset:48px 0 38px}
+ .circle{width:clamp(145px,45vw,175px);height:clamp(145px,45vw,175px);padding-top:25px}
+ .circle b{font-size:clamp(9px,2.8vw,11px);letter-spacing:.08em}
+ .circle small{font-size:7px;line-height:1.45}
+ .ops{left:calc(50% - 158px);top:18px}
+ .fin{left:calc(50% - 12px);top:18px}
+ .energy{left:calc(50% - 85px);top:137px}
+ .overlap-core{width:96px;height:96px;top:56%}
+ .overlap-core strong{font-size:10px}
+ .overlap-core small{font-size:7px}
+ .venn-foot{font-size:7px;letter-spacing:.06em}
+}
+@media(max-width:380px){
+ .venn{min-height:390px}
+ .circle{width:145px;height:145px;padding-top:22px}
+ .ops{left:calc(50% - 140px)}
+ .fin{left:calc(50% - 5px)}
+ .energy{left:calc(50% - 72px);top:126px}
+ .overlap-core{width:88px;height:88px}
+}
 </style>
 </head>
 <body>
@@ -51,7 +82,7 @@
 <div class="skill"><div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h5M8 17h8"/></svg></div><h3 data-en="Data & Software" data-id="Data dan Perangkat Lunak">Data & Software</h3><p data-en="Excel, Power BI, Tableau, Python, R, MATLAB, MS Project, Visio, Minitab, SPSS, Accurate, PVsyst, SimaPro, OpenLCA." data-id="Excel, Power BI, Tableau, Python, R, MATLAB, Microsoft Project, Visio, Minitab, SPSS, Accurate, PVsyst, SimaPro, dan openLCA.">Excel, Power BI, Tableau, Python, R, MATLAB, MS Project, Visio, Minitab, SPSS, Accurate, PVsyst, SimaPro, OpenLCA.</p></div>
 </div></div></section>
 <section class="section edu" id="education"><div class="wrap"><div class="eyebrow" style="color:#277e66" data-en="05 / EDUCATION" data-id="05 / PENDIDIKAN">05 / EDUCATION</div><h2 style="font:800 clamp(34px,4vw,48px)/1.1 Manrope;letter-spacing:-.06em;margin:14px 0 28px" data-en="Academic foundation." data-id="Pendidikan dan landasan keilmuan.">Academic foundation.</h2><div class="edurow"><div><h3 data-en="Master of Engineering — Systems and Industrial Engineering" data-id="Magister Teknik Sistem dan Industri">Master of Engineering — Systems and Industrial Engineering</h3><p data-en="Institut Teknologi Sepuluh Nopember (ITS), Surabaya · 2024–2026" data-id="Institut Teknologi Sepuluh Nopember (ITS), Surabaya · 2024–2026">Institut Teknologi Sepuluh Nopember (ITS), Surabaya · 2024–2026</p></div><div class="gpa" data-en="GPA 3.80 / 4.00" data-id="IPK 3,80 / 4,00">GPA 3.80 / 4.00</div></div><div class="edurow"><div><h3 data-en="Bachelor of Engineering — Industrial Engineering" data-id="Sarjana Teknik Industri">Bachelor of Engineering — Industrial Engineering</h3><p>Institut Teknologi Sepuluh Nopember (ITS), Surabaya · 2018–2022</p></div><div class="gpa" data-en="GPA 3.71 / 4.00" data-id="IPK 3,71 / 4,00">GPA 3.71 / 4.00</div></div></div></section>
-<section class="contact"><div class="wrap contactgrid"><div><div class="eyebrow" data-en="LET’S CONNECT" data-id="MARI TERHUBUNG">LET’S CONNECT</div><h2 data-en="Open to thoughtful collaboration." data-id="Terbuka untuk kolaborasi profesional.">Open to thoughtful collaboration.</h2><p data-en="Interested in sustainable manufacturing, industrial decarbonization, renewable energy integration, and evidence-based operational improvement." data-id="Berfokus pada manufaktur berkelanjutan, dekarbonisasi industri, integrasi energi terbarukan, dan peningkatan kinerja operasional berbasis data.">Interested in sustainable manufacturing, industrial decarbonization, renewable energy integration, and evidence-based operational improvement.</p></div><div class="contactcard"><small data-en="LOCATION" data-id="LOKASI">LOCATION</small><span data-en="East Java, Indonesia" data-id="Jawa Timur, Indonesia">East Java, Indonesia</span><small data-en="ENGLISH TEST" data-id="TES BAHASA INGGRIS">ENGLISH TEST</small><span data-en="TOEFL 583" data-id="TOEFL 583">TOEFL 583</span><small data-en="CURRICULUM VITAE" data-id="DAFTAR RIWAYAT HIDUP">CURRICULUM VITAE</small><a href="cv-english.html">English CV ↗</a><br><a href="cv-indonesia.html" data-en="Indonesian CV ↗" data-id="CV Bahasa Indonesia ↗">Indonesian CV ↗</a></div></div></section>
+<section class="contact"><div class="wrap contactgrid"><div><div class="eyebrow" data-en="LET’S CONNECT" data-id="MARI TERHUBUNG">LET’S CONNECT</div><h2 data-en="Open to thoughtful collaboration." data-id="Terbuka untuk kolaborasi profesional.">Open to thoughtful collaboration.</h2><p data-en="Interested in sustainable manufacturing, industrial decarbonization, renewable energy integration, and evidence-based operational improvement." data-id="Berfokus pada manufaktur berkelanjutan, dekarbonisasi industri, integrasi energi terbarukan, dan peningkatan kinerja operasional berbasis data.">Interested in sustainable manufacturing, industrial decarbonization, renewable energy integration, and evidence-based operational improvement.</p></div><div class="contactcard"><small data-en="LOCATION" data-id="LOKASI">LOCATION</small><span data-en="East Java, Indonesia" data-id="Jawa Timur, Indonesia">East Java, Indonesia</span><small data-en="ENGLISH TEST" data-id="TES BAHASA INGGRIS">ENGLISH TEST</small><span data-en="TOEFL 583" data-id="TOEFL ITP 583">TOEFL 583</span><small data-en="CURRICULUM VITAE" data-id="DAFTAR RIWAYAT HIDUP">CURRICULUM VITAE</small><a href="cv-english.html">English CV ↗</a><br><a href="cv-indonesia.html" data-en="Indonesian CV ↗" data-id="CV Bahasa Indonesia ↗">Indonesian CV ↗</a></div></div></section>
 </main><footer><div class="wrap foot"><b>IAN<span style="color:var(--amber)">.</span></b><span data-en="© 2026 · Industrial Systems & Sustainability" data-id="© 2026 · Rekayasa Sistem Industri dan Keberlanjutan">© 2026 · Industrial Systems & Sustainability</span><a href="#" data-en="Back to top ↑" data-id="Kembali ke atas ↑">Back to top ↑</a></div></footer>
 <script>
 const buttons=[...document.querySelectorAll('[data-lang]')];function setLang(lang){document.documentElement.lang=lang;buttons.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));document.querySelectorAll('[data-en][data-id]').forEach(el=>{el.innerHTML=el.dataset[lang]});const cv=document.querySelector('.actions a[href^="cv-"]');if(cv)cv.href=lang==='id'?'cv-indonesia.html':'cv-english.html';}buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
